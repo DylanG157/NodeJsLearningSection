@@ -2,13 +2,16 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
     res.write("Hello World");
-    res.end()
+    res.end();
   }
-  if (req.url === '/api/courses'){
-      res.write(JSON.stringify([1,2,3]))
-      res.end()
+  if (req.url === "/api/courses") {
+    res.write(JSON.stringify([1, 2, 3]));
+    res.end();
   }
 });
+
+//change to test github
+
 server.listen(3000);
 
 console.log("listening on port 3000...");
