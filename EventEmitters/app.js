@@ -7,4 +7,6 @@ logger.on("messageLogged", function (arg) {
   console.log("Listener called", arg);
 });
 
-logger.log('message')//This now you can access the function in that class
+//fix my play button
+
+logger.log("message"); //This now you can access the function in that class
